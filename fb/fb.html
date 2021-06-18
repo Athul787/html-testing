@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="fb.css" type="text/css">
+    
 </head>
 <body>
     <div class="container">
@@ -51,20 +53,27 @@
             <div class="right-section">
                 <h1>Sign Up</h1>
                 <p class="sign-up-para">It's free anyone can join</p>
-                <input class="box" type="text" placeholder="Full Name"><br><br>
-                <input class="box" type="email" placeholder="Email"><br><br>
-                <input class="box" type="password" placeholder="New Password"><br><br>
-                <select >
-                    <option>Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
+                <form class="signup-form" action="hello2.html" id="signup-form">
+                <input name="fname" class="box" type="text" placeholder="Full Name"><br><br>
+                <input name="mailid" class="box" type="text" placeholder="Email"><br><br>
+                <input name="password" class="box" type="password" placeholder="New Password"><br><br>
+                <select name="gender">
+                    <option value="">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
                 </select><br><br>
                 <input type="text" placeholder="Date of Birth"><br><br>
                 <input class="sign-up" type="submit" value="Sign Up">
+                </form>
             </div>
         </div>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
